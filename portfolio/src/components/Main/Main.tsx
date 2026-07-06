@@ -17,7 +17,7 @@ import reactIcon from "../../assets/react-icon.svg";
 import typescriptIcon from "../../assets/typescript-icon.svg";
 import vueIcon from "../../assets/vue-icon.svg";
 import boostrapIcon from "../../assets/bootstrap-icon.svg";
-import kali from "../../assets/kali.svg";
+//import kali from "../../assets/kali.svg";
 //import linux from "../../assets/linux.svg";
 import github from "../../assets/github.svg";
 //import docker from "../../assets/docker.svg";
@@ -180,11 +180,11 @@ export function Main() {
                   "width": 20,
                   "height": 20
                 },
-                {
-                 "src": kali,
-                  "width": 20,
-                 "height": 20
-                 },
+                // {
+                //  "src": kali,
+                //   "width": 20,
+                //  "height": 20
+                //  },
                 // {
                 //    "src": docker,
                 //    "width": 20,
