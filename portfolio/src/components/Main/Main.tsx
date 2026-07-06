@@ -91,7 +91,7 @@ export function Main() {
           },
           "particles": {
             "color": {
-              "value": "#ffffff"
+              "value": "#00ff88"
             },
             "lineLinked": {
               "blink": false,
@@ -139,7 +139,7 @@ export function Main() {
             "rotate": {
               "animation": {
                 "enable": true,
-                "speed": 5,
+                "speed": 10,
                 "sync": false
               },
               "direction": "random",
@@ -280,10 +280,7 @@ export function Main() {
             "url": ""
           },
           "background": {
-            "image": "",
-            "position": "50% 50%",
-            "repeat": "no-repeat",
-            "size": "cover"
+            "color": "linear-gradient(180deg, #0f172a 0%, #020617 60%, #000000 100%)"
           }
         }}
       />
@@ -294,3 +291,4 @@ export function Main() {
     </Container>
   );
 }
+    
