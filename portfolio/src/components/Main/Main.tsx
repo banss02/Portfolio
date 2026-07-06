@@ -91,7 +91,12 @@ export function Main() {
           },
           "particles": {
             "color": {
-              "value": "#210f4b"
+              "value": [
+                  "#045c82",
+                  "#14829a",
+                  "#8b5cf6",
+                  "#06b6d4"
+                ]
             },
             "lineLinked": {
               "blink": false,
@@ -136,6 +141,11 @@ export function Main() {
               "random": true,
               "value": 1
             },
+             "shadow": {
+                "enable": true,
+               "color": "#20657c",
+               "blur": 8
+              },
             "rotate": {
               "animation": {
                 "enable": true,
