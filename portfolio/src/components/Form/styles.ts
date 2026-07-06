@@ -109,7 +109,7 @@ export const ContainerSucces = styled.div`
     transition: all 0.3s ease;
 
     &:hover {
-      box-shadow: 0 0 24px rgba(59, 130, 246, 0.4);
+      box-shadow: 0 0 24px rgba(160, 181, 216, 0.4);
       transform: translateY(-1px);
     }
   }

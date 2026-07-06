@@ -38,7 +38,7 @@ export const ContactCard = styled.a`
   gap: 1.6rem;
   padding: 1.8rem 2.8rem;
   border-radius: 1.4rem;
-  background: rgba(15, 23, 42, 0.7);
+  background: rgba(138, 146, 255, 0.1);
   border: 1px solid rgba(59, 130, 246, 0.15);
   backdrop-filter: blur(12px);
   min-width: 28rem;
@@ -54,7 +54,7 @@ export const ContactCard = styled.a`
     width: 4.8rem;
     height: 4.8rem;
     border-radius: 1rem;
-    background: rgba(59, 130, 246, 0.1);
+    background: rgba(202, 225, 228, 0.1);
     border: 1px solid rgba(59, 130, 246, 0.2);
     display: flex;
     align-items: center;
