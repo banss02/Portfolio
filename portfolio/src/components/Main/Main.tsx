@@ -180,11 +180,11 @@ export function Main() {
                   "width": 20,
                   "height": 20
                 },
-                // {
-                // "src": kali,
-                //  "width": 20,
-                // "height": 20
-                // },
+                {
+                 "src": kali,
+                  "width": 20,
+                 "height": 20
+                 },
                 // {
                 //    "src": docker,
                 //    "width": 20,
@@ -196,10 +196,10 @@ export function Main() {
                  "height": 20
                },
               // {
-              //  "src": linux,
-              //    "width": 20,
-              //    "height": 20
-              //   },
+              //   "src": linux,
+              //     "width": 20,
+              //     "height": 20
+              //    },
                 {
                   "src": jsIcon,
                   "width": 20,
