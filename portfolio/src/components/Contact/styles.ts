@@ -1,75 +1,86 @@
 import styled from "styled-components";
 
-
 export const Container = styled.section`
-  margin-top: 10rem;
+  margin-top: 12rem;
 
-  header{
-    text-align: center;
-    h2{
-      text-align: center;
-      font-size: 4rem;
-    }
-    p{
-      color: var(--green);
-      font-weight: 500;
-    }
+  .section-sub {
+    font-size: 1.6rem;
+    color: var(--text-secondary);
+    margin-top: 0.8rem;
   }
 
-  .contacts{
+  .contacts {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    margin-bottom: 4rem;
+  }
+
+  @media (max-width: 640px) {
+    .contacts { flex-direction: column; align-items: center; }
+  }
+`;
+
+export const SectionTitle = styled.h2`
+  font-size: clamp(3rem, 5vw, 4rem);
+  font-weight: 800;
+  display: inline-block;
+  background: linear-gradient(135deg, var(--text-primary), var(--blue));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+`;
+
+export const ContactCard = styled.a`
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+  padding: 1.8rem 2.8rem;
+  border-radius: 1.4rem;
+  background: rgba(15, 23, 42, 0.7);
+  border: 1px solid rgba(59, 130, 246, 0.15);
+  backdrop-filter: blur(12px);
+  min-width: 28rem;
+  text-decoration: none;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+
+  &:hover {
+    border-color: rgba(59, 130, 246, 0.4);
+    box-shadow: 0 0 30px rgba(59, 130, 246, 0.15);
+  }
+
+  .icon-wrap {
+    width: 4.8rem;
+    height: 4.8rem;
+    border-radius: 1rem;
+    background: rgba(59, 130, 246, 0.1);
+    border: 1px solid rgba(59, 130, 246, 0.2);
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 2rem;
-    place-items: center;
-    margin-top: 1.5rem;
-    div{
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      width: 50%;
-      max-width: 30rem;
-      gap: 2rem;
-      background-color: var(--green);
-      border-radius: 1.4rem;
-      padding: 1.6rem 2.8rem;
-      transition: background-color 0.25s;
-      img{
-        width: 4rem;
-      }
-      a{
-        color: var(--black);
-        font-weight: 500;
-      }
-      &:hover{
-        background-color: var(--pink);
-        a{
-          color: #FFF;
-        }
-      }
-    }
+    flex-shrink: 0;
+
+    img { width: 2.2rem; }
   }
 
-
-  @media(max-width: 960px){
-    .contacts{
-      flex-direction: column;
-      div{
-        width: 100%;
-        
-      }
-    }
+  div {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
   }
-  
-`
-/* old one - 2/1/2023 - 
-@media(max-width: 960px){
-    .contacts{
-      flex-direction: column;
-      div{
-        width: 100%;
-        flex-direction: column;
-      }
-    }
 
-*/
+  .contact-label {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--blue);
+    text-transform: uppercase;
+    letter-spacing: 0.08rem;
+  }
+
+  .contact-text {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: var(--text-primary);
+  }
+`;

@@ -1,4 +1,9 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
+
+const gridMove = keyframes`
+  0%   { background-position: 0 0, 0 0, top right, bottom left, center; }
+  100% { background-position: 40px 40px, 40px 40px, top right, bottom left, center; }
+`;
 
 export const Container = styled.main`
   position: relative;
@@ -7,32 +12,34 @@ export const Container = styled.main`
   padding: 0 10rem;
 
   background:
-  linear-gradient(rgba(255,255,255,.04) 1px, transparent 1px),
-  linear-gradient(90deg, rgba(255,255,255,.04) 1px, transparent 1px),
-  radial-gradient(circle at top right, rgba(0,255,136,.12), transparent 35%),
-  radial-gradient(circle at bottom left, rgba(59,130,246,.10), transparent 35%),
-  linear-gradient(180deg, #0f172a 0%, #020617 60%, #000000 100%);
+    linear-gradient(rgba(59, 130, 246, 0.06) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(59, 130, 246, 0.06) 1px, transparent 1px),
+    radial-gradient(ellipse at 80% 10%, rgba(59, 130, 246, 0.18) 0%, transparent 50%),
+    radial-gradient(ellipse at 20% 90%, rgba(139, 92, 246, 0.15) 0%, transparent 50%),
+    radial-gradient(ellipse at 50% 50%, rgba(0, 255, 136, 0.04) 0%, transparent 60%),
+    linear-gradient(180deg, #020617 0%, #0a0f1e 50%, #020617 100%);
 
-background-size:
-  40px 40px,
-  40px 40px,
-  auto,
-  auto,
-  auto;
+  background-size:
+    50px 50px,
+    50px 50px,
+    auto, auto, auto, auto;
+
+  animation: ${gridMove} 8s linear infinite;
 
   #tsparticles {
-    position: absolute;
+    position: fixed;
     inset: 0;
     width: 100%;
     height: 100%;
     z-index: -1;
+    pointer-events: none;
   }
 
   @media (max-width: 740px) {
-    padding: 0 4rem;
+    padding: 0 3rem;
   }
 
   @media (max-width: 360px) {
-    padding: 0 2rem;
+    padding: 0 1.6rem;
   }
 `;
