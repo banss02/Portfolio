@@ -91,7 +91,7 @@ export function Main() {
           },
           "particles": {
             "color": {
-              "value": "#00ff88"
+              "value": "#210f4b"
             },
             "lineLinked": {
               "blink": false,
@@ -115,7 +115,7 @@ export function Main() {
               "enable": true,
               "outMode": "out",
               "random": false,
-              "speed": 2,
+              "speed": 3,
               "straight": false
             },
             "number": {
@@ -124,7 +124,7 @@ export function Main() {
                 "area": 800
               },
               "limit": 20,
-              "value": 15,
+              "value": 22,
             },
             "opacity": {
               "animation": {
@@ -139,7 +139,7 @@ export function Main() {
             "rotate": {
               "animation": {
                 "enable": true,
-                "speed": 10,
+                "speed": 15,
                 "sync": false
               },
               "direction": "random",
@@ -280,7 +280,7 @@ export function Main() {
             "url": ""
           },
           "background": {
-            "color": "linear-gradient(180deg, #0f172a 0%, #020617 60%, #000000 100%)"
+            "color": "transparent"
           }
         }}
       />

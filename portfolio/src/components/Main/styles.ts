@@ -6,6 +6,16 @@ export const Container = styled.main`
   z-index: 0;
   padding: 0 10rem;
   overflow-x: hidden;
+  min-height: 100vh;
+
+  background: linear-gradient(
+    180deg,
+    #0f172a 0%,
+    #111827 40%,
+    #020617 75%,
+    #000000 100%
+  );
+
   #tsparticles{
     position: absolute;
     left: 0;
@@ -22,4 +32,4 @@ export const Container = styled.main`
   @media(max-width: 360px){
     padding: 0 2rem;
   }
-`
+`;
